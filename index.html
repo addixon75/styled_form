@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <div id="header">
+                <h1>Book Club Survey</h1>
+                <p>This survey is to gather information to start a book club at Conquest Books.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="company-info">
+                <h2>CONQUEST BOOKS</h2>
+                <P>323 15th St</P>
+                <p>Ashland, Ky.</p>
+                <p>606-922-0090</p>
+                <p>conquestky@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="demographics">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="0" max="99" required title="2 digit age from 13-99">
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="gender">
+                <label for="male">Male</label>
+                <input type="radio" name="genders" id="male" value="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="genders" id="female" value="female">
+
+                <label for="other">Other</label>
+                <input type="radio" name="genders" id="other" value="other">
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="preference">
+                <label for="physical-book">Physical Book</label>
+                <input type="radio" name="preference" id="physical-book" value="physical-book"></input>
+
+                <label for="ebook">E-Book</label>
+                <input type="radio" name="preference" id="ebook" value="ebook"></input>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="genre">
+                <p>Select your favorite book genre.</p>
+                <input type="checkbox" id="genre1" name="genre" value="Fiction">
+                <label for="genre1">Fiction</label>
+
+                <input type="checkbox" id="genre2" name="genre" value="Non-Fiction">
+                <label for="genre2">Non-Fiction</label>
+
+                <input type="checkbox" id="genre3" name="genre" value="Historical Fiction">
+                <label for="genre3">Historical Fiction</label>
+
+                <input type="checkbox" id="genre4" name="genre" value="Sci-Fi">
+                <label for="genre4">Sci-Fi</label>
+
+                <input type="checkbox" id="genre5" name="genre" value="Biography">
+                <label for="genre5">Biography</label>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="textarea">
+                <p>Recommend a book in the comments.</p>
+                <textarea id="comments" placeholder="Comments"></textarea>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="submit">
+                <input type="submit" id="submit" value="Submit"></input>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
